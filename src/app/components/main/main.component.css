@@ -1,11 +1,11 @@
 
 .kpicard{
 	height: 194px;	
-	width: 295px;	
+	width: 100%;	
 	border-radius: 2px;	
 	background-color: #FFFFFF;	
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.15);
-	font-family: Lato;
+	
 	margin: 24px;
 }
 
@@ -31,11 +31,11 @@
 	font-size: 24px;	
 	font-weight: bold;	
 	line-height: 29px;
+	
 }
 
 .var-pct{
 	color: #333333;	
-	font-family: Lato;	
 	font-size: 30px;	
 	font-weight: 900;
 	width: 39%;
@@ -47,7 +47,6 @@
 .var-act{
 	
 	color: #333333;
-	font-family: Lato;
 	font-size: 30px;
 	font-weight: 300;
 	width: 59%;
@@ -75,7 +74,8 @@
 	text-align: center;
 	width: 295px;
     border-bottom: 1px #d8d8d8 solid;
-    display: flex;
+	display: flex;
+	
 
 }
 
@@ -90,7 +90,6 @@
     /* height: 14px;
 	width: 69px; */
 	color: #000000;
-	font-family: Lato;
 	font-size: 12px;
 	line-height: 14px;
 	text-align: left;

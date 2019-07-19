@@ -1,12 +1,14 @@
 
 .kpicard{
-	height: 194px;	
-	width: 100%;	
+		
 	border-radius: 2px;	
 	background-color: #FFFFFF;	
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.15);
 	
-	margin: 24px;
+	
+}
+.card-outer{
+	margin: 15px
 }
 
 .kpiarrow{

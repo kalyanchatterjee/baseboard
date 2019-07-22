@@ -3,19 +3,18 @@
     <div class="kpicard">
       <div class="kpiheader">
         <div class="kpiarrow">
-
         </div>
         <!-- get kpi name and place here instead of KPI 1-->
-        <div class="kpititle">KPI 1
+        <div class="kpititle">{{ this.card.name }}
         </div>
       </div> <!-- close header -->
       <div class="kpibody">
-        <div class="var-pct">(9.6%)
+        <div class="var-pct">({{ this.card.n1 }})
         </div>
         <div class="var-sep">|
 
         </div>
-        <div class="var-act">($3,000)
+        <div class="var-act">({{ this.card.n2 }})
 
         </div>
       </div> <!-- close kpibody -->
@@ -24,13 +23,13 @@
         <div class="subtext">
           <!-- TY -->
           <p>
-            TY $2,456K
+            TY {{ this.card.n3 }}
           </p>
         </div>
         <div class="subtext">
           <p>
             <!-- LY -->
-            LY $2,456K
+            LY {{ this.card.n4 }}
           </p>
         </div>
 

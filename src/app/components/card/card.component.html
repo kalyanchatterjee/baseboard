@@ -2,38 +2,33 @@
   <div class="card">
     <div class="kpicard">
       <div class="kpiheader">
-        <div class="kpiarrow">
-        </div>
+        <!-- <div class="kpiarrow"></div> -->
         <!-- get kpi name and place here instead of KPI 1-->
-        <div class="kpititle">{{ this.card.name }}
-        </div>
-      </div> <!-- close header -->
+        <div class="kpititle">{{ this.card.name }}</div>
+      </div>
+      <!-- close header -->
       <div class="kpibody">
-        <div class="var-pct">({{ this.card.n1 }})
+        <div class="var-pct">({{ this.card.n1 / 100 | percent }})</div>
+        <div class="var-sep">|</div>
+        <div class="var-act">
+          ({{ this.card.n2 | currency: "CAD":"symbol-narrow" }})
         </div>
-        <div class="var-sep">|
-
-        </div>
-        <div class="var-act">({{ this.card.n2 }})
-
-        </div>
-      </div> <!-- close kpibody -->
+      </div>
+      <!-- close kpibody -->
       <div>
         <!-- kpifooter -->
         <div class="subtext">
           <!-- TY -->
-          <p>
-            TY {{ this.card.n3 }}
-          </p>
+          <p>TY {{ this.card.n3 | currency: "CAD":"symbol-narrow" }}</p>
         </div>
         <div class="subtext">
           <p>
             <!-- LY -->
-            LY {{ this.card.n4 }}
+            LY {{ this.card.n4 | currency: "CAD":"symbol-narrow" }}
           </p>
         </div>
-
-      </div> <!-- kpifooter -->
+      </div>
+      <!-- kpifooter -->
       <!-- <a href= "page 2">this links to page 2</a>-->
     </div>
     <!--kpicard-->

@@ -1,14 +1,14 @@
 <div class="container-fluid">
-  <div *ngFor="let card of cards">
+  <div class="row" *ngFor="let card of cards">
     <app-card [card]="card"></app-card>
   </div>
 
   <!-- <app-card [card]="cards[2]"></app-card> -->
 
   <!-- <div class="row">
-    <app-card></app-card>
-    <app-card></app-card>
-    <app-card></app-card>
+    <app-card [card]="card[0]"></app-card>
+    <app-card [card]="card[1]"></app-card>
+    <app-card [card]="card[2]"></app-card>
   </div>
   
 
@@ -24,6 +24,5 @@
     <app-card></app-card>
     <app-card></app-card>
   </div> -->
-
 </div>
 <!--container fluid-->
